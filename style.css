@@ -64,6 +64,7 @@ h1 {
   section {
     background-color: #ddd;
   }
+
   .column {
     float: left;
     width: 33.333%;
@@ -86,13 +87,13 @@ h1 {
   .column-70{
     width: 70%;
     float: left;
-    height: 500px;
+    /*height: 500px;*/
   }
 
   .column-30{
     width: 30%;
     float: left;
-    height: 500px;
+    /*height: 500px;*/
   }
 
   .row:before {
@@ -108,6 +109,7 @@ h1 {
 
   .barImage {
     width: 100%;
+    display: block;
   }
 
   .column-70-inner{
@@ -122,11 +124,33 @@ h1 {
 
   p {
    padding: 20px;
+   height: auto;
   }
-
+  
   h2 {
     text-align: center;
     font-family: "Merriweather", serif;
     font-weight: bold;
     padding-top: 30px;
   }
+
+  @media (max-width: 900px){
+    .column-30{
+      width: 100%;
+    }
+    .column-70{
+      width: 100%;
+    }
+    h1, h2 {
+      font-size: 1.2em;
+    }
+    h3 {
+      font-size: 1em;
+    }
+  }
+
+  .bar-hero {
+    background: url('https://gay-escapes.com/blog/wp-content/uploads/2015/06/gay-friendly-bar3.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 200px;
+    }
